@@ -12,7 +12,7 @@ echo "Lecture de la video"
 
 BASHDIR=$(dirname $0)
 
-if [ -z $2 ]
+if [ "$2" != "" ]
 then
     ${BASHDIR}/play $URL $2
 else
