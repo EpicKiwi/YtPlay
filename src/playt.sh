@@ -10,7 +10,7 @@ URL=$(youtube-dl -gf $FORMAT $1)
 
 echo "Lecture de la video"
 
-BASHDIR=$(dirname $0)
+BASHDIR=$(pushd $(dirname $0))
 
 if [ -z $2 ]
 then
