@@ -1,14 +1,11 @@
 #!/bin/bash
 
-if [ -z $2 ]
+echo $2
+
+if [ "$2" = "corner" ]
 then
-    if [ $2 -e "corner" ]
-    then
         echo "lecture dans le coin"
-        omxplayer --win '20 20 500 400' --aspect-mode letterbox $1
-    else
-        echo "Option inconnue $2"
-    fi
+        omxplayer --win '20 20 300 300' --aspect-mode letterbox $1
 else
     omxplayer --blank $1
 fi
