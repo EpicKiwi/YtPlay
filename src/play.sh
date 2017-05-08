@@ -2,7 +2,7 @@
 
 if [ -z $2 ] && [ $2 -e "corner" ]
 then
-    omxplayer --win '20 20 300 200' --aspect-mode letterbox --blank $1
+    omxplayer --win '20 20 300 200' --aspect-mode letterbox $1
 else
-    omxplayer --blank $1
+    omxplayer $1
 fi
