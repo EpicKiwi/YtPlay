@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $2 = "corner" ]
+if [ -z $2 ] && [ $2 -e "corner" ]
 then
     omxplayer --win '20 20 300 200' --aspect-mode letterbox $1
 else
